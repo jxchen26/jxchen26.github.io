@@ -1,0 +1,253 @@
+*{
+    margin: 0; 
+    padding:0;
+    box-sizing: border-box;
+}
+
+html,body{
+    
+    background-color:rgba(196, 198, 196, 0.67);
+    font-family: "Lato", "Open Sans", sans-serif, "calibri";
+    text-rendering: optimizeLegibility;
+    font-size: 20px;
+    margin:0 auto;
+}
+
+ul{ /*Use to remove bullet points in list*/
+list-style-type: none; 
+}
+
+
+/* Header of the body*/
+
+header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(PIC/nixie_tubes.jpg);
+    background-position:center;
+    background-size: cover;
+    width: auto;
+    height:35vh;
+    
+}
+
+
+
+/* Navgigation menu*/
+.nav_menu{
+    height:40px;
+    background: rgb(39, 42, 39);
+
+}
+
+.menu_text li {
+    text-align: center;
+    display: inline-block;
+    padding: .4%;
+    margin-left: 5%;
+
+    
+}    
+.last{
+    margin-right: 40%;
+}
+
+.menu_text li a{
+    color: aliceblue;
+    padding-bottom: 2px;
+    top:30vh;
+    
+}
+
+.menu_text li a{
+    text-decoration: none;
+
+}
+
+.menu_text li a:hover{
+    border-bottom: 3px solid #e67e22;
+    transition: .1s
+
+}
+
+/*
+Sticky Nav Menu
+.sticky{
+    position:fixed;
+    width:100%;
+    background: background: rgb(39, 42, 39);
+}
+
+.sticky.menu_text li a{
+    color: aliceblue;
+    padding-bottom: 2px;
+}
+
+.sticky.menu_text li a{
+    text-decoration: none;
+
+}
+
+.sticky.menu_text li a:hover{
+    border-bottom: 3px solid #e67e22;
+    transition: .1s
+
+}
+*/
+
+
+
+/*=======================Section of the body==========================*/
+
+/*=======================Author section===============================*/
+
+.author_section{
+
+    font-family: sans-serif;
+    margin-right: 15%;
+    margin-top: 3%;
+    width:17%;  
+    float:right;
+    padding:2%; 
+    background-color: white; 
+}
+
+.author_section div{
+    font-size: 75%;
+}
+
+.author_section div h1{
+    border-bottom: 2px solid;
+    border-color: grey;
+    padding-bottom: 2%;
+    font-size: 110%;
+    
+}
+
+.author_section li{
+    padding-bottom: 5%;
+}
+
+.name{
+    padding-top:5%;
+}
+
+.author_section img{
+    
+    height: 75%;
+    width: 75%;
+    border-radius: 100%;
+    padding: 1px;
+    border: 1px solid rgba(0, 0, 0, 0.69); 
+    background-color: rgba(19, 99, 226, 0.56);
+    margin-left:16%;
+}
+
+
+.author_links a{
+    text-decoration: none;
+    color: Blue;
+}
+
+
+
+/*==================About Section=========================*/
+
+.about_section{
+    width:50%;
+    float:left;
+    margin-top: 3%;
+    margin-left:16%;
+    padding: 2.5%;
+    background-color: white;
+}
+
+
+.about_section h1{
+    border-bottom: 2px solid #e67e22;
+}
+
+
+/*===================Project Section=====================*/
+.project_section{
+    height: auto;
+    width:50%;
+    float:left;
+    margin-top: 3%;
+    margin-left:16%;
+    padding: 2.5%;
+    background-color: white;
+}
+
+.project_section h1{
+    border-bottom: 2px solid #e67e22;
+}
+
+.project_links{
+    color: dimgrey;
+    font-size: 130%;
+    text-decoration: none;
+}
+.project_links::after{
+    width: 0;
+    content: '';
+    display: block;
+    color: black;
+    transition: width .9s;
+    border-bottom: 3px solid #7c7b7b;
+    margin-left: 4%;
+
+}
+
+.project_links:hover{
+    color: black;
+
+}
+.project_links:hover::after{
+    border-bottom: 3px solid #a6CF41;
+    width:80%;
+    margin-left: 4%; /*This margin is used to adjust the starting position of moving border*/
+}
+
+.project_summary{
+    margin-left: 4%;
+}
+
+/*
+.project_links:visited{
+    color: purple;
+    text-decoration: none;
+}
+*/
+
+
+/*=========Status Section==============*/
+
+.status_section{
+    width:50%;
+    float:left;
+    margin-top: 3%;
+    margin-left:16%;
+    padding: 2.5%;
+    background-color: white;
+    margin-bottom: 2%;
+}
+
+.status_section h1{
+    border-bottom: 2px solid #e67e22;
+    
+}
+
+/*================= Pictures====================*/
+.connect4_pic{
+    height: 40vh; 
+    margin-left: 25%;
+}
+    
+.hud_pic{
+    height: 80%;
+    margin-left: 30%;  
+}
+
+.group_pic{
+max-height: 30vh;
+    margin-left: 25%;
+}
